@@ -1,0 +1,70 @@
+Linux cmds (Necessary):
+
+1. "cat <filename>"
+ex: cat notes.txt
+it displays the content inside notes.txt
+
+2. "ls"
+It lists files and directories in the current directory.
+
+3. "cd .."
+Moves up one directory level (to the parent directory)
+ex: 
+
+
+hello form db's macbook pro
+
+git - saves changes/history of code or project
+useful when many developers are working on same project
+it tracks the changes, bugs, and saves every version of code as a new file.
+
+useful to resolve bugs and mantaining history of code
+
+how to use git?
+
+to start tracking a folder =
+use git init
+(iss folder ko track karna chalu karo)
+
+to start tracking a file inside a folder =
+use git add <filename>
+(git bhai iss file ko version control karo)
+
+in reality there will be many files
+so for all files, git add command won't be efficient!
+
+for that use this cmd = 
+git add .
+this command starts tracking all the files
+
+u - Untracked
+A - Index added (it means a particular file is add into git index)
+M - Modified
+
+In .git folder, in index folder, git stores the info of the files to track
+Untracked files will not be displayed in "cat index" command
+
+git status
+this cmd will display the currently tracking files in simple ui instead of checking it from "cd .git cat index" cmd
+
+all the git commands perform read and write operations on the files inside .git folder
+so, the tracking of the all files will be on local computer (inside local .git folder)
+
+so, tracking happens inside our project / project folder
+
+if we transfer the corresponding project folder through pendrive or any other way, the .git folder (which contains all the changes) will also get trsnsferred with it.
+
+if we type "git status", it will show us the files which are not committed, which are currently in staging phase.
+
+when we start tracking any files, first it will go to staging area by using "git add ."
+
+git commit
+this cmd will save your changes to the local Git repository. It creates a snapshot of your project's current state so you can track versions over time.
+
+Usage:
+git commit -m "Message to send when committing"
+
+ex:
+git commit -m "Add login form validation"
+
+This records the changes you've staged (with git add) and attaches the message "Add login form validation" to that snapshot.
