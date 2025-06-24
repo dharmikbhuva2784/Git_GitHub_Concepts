@@ -27,7 +27,7 @@ it tracks the changes, bugs, and saves every version of code as a new file.
 
 useful to resolve bugs and mantaining history of code
 
-how to use git?
+How to use git?
 
 to start tracking a folder =
 use git init
@@ -190,3 +190,15 @@ git remote add origin https://github.com/dharmikbhuva2784/Git_GitHub_Concepts.gi
 git push -u origin main
 
 this will push your whole code to github repo
+
+Assignment:
+- there is a company named ChaiCohort
+- this company needs to prepare an onboarding documentation
+- when an employee or an intern joins the company, he/she is given a guide to how to maintain a git
+- task: create a repo named "ChaiCohort" and add file with content:
+    - basic git commands
+    - whole git summary, git folder architecture
+    - precautions during collaboration
+    - rule for commit
+        (e.g. msg should be proper for commit)
+        (e.g. if solving a ticket, then message should be ticket id)
