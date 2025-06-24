@@ -68,3 +68,21 @@ ex:
 git commit -m "Add login form validation"
 
 This records the changes you've staged (with git add) and attaches the message "Add login form validation" to that snapshot.
+
+commit is a checkpoint(snapshot)
+when we commit, it becomes a checkpoint
+
+Every commit has it's own id - hash
+how to see that commit id?
+
+git log
+It shows the history of the commits you've made in your git repository
+it tells:
+- who made the commits?
+- what is the commit id?
+- when the commits are made
+- what was the commit message?
+
+git diff:
+The git diff command shows the exact line-by-line changes made in your code that have not been committed yet. It helps you see what's changed before committing or after pulling.
+
