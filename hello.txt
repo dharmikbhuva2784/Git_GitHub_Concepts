@@ -9,10 +9,17 @@ It lists files and directories in the current directory.
 
 3. "cd .."
 Moves up one directory level (to the parent directory)
-ex: 
+ex: if you're in /home/user/Desktop
+    cd ..
+    takes you to /home/user
 
+4. "ls -a"
+Lists all files, including hidden files (those starting with a dot (.)).
+ex: ls -a
+    will show files like:
+    .   ..    .bashrc     .gitignore        myfile.txt      .git
 
-hello form db's macbook pro
+___________________________________________________________________________
 
 git - saves changes/history of code or project
 useful when many developers are working on same project
@@ -86,4 +93,28 @@ it tells:
 git diff:
 The git diff command shows the exact line-by-line changes made in your code that have not been committed yet. It helps you see what's changed before committing or after pulling.
 
----
+git cat-file -p <commit id (hash)>
+shows the message of commit
+
+git cat-file -s <commit id(hash)>
+shows the size of a commit
+
+git cat-file -t <commit id(hash)>
+shows the type of the action (e.g. commit)
+
+git is case sensitive
+when we try to read file inside .git folder, it will show us the not readable text format which is due to compressed files
+
+when we use "git cat-file -p <commit id (hash)>" command, it will first decompress the file and then it'll print the results.
+
+git init                 --|
+git add .                --|----------- 98% of the time we will be using this commands
+git commit -m "Message"  --|
+
+git log     --|
+              |---0.5% of the time we will be using this commands
+git status  --|
+
+how the git commit's hash (Id) is made ?
+first read all the code files in folder and HASH it using SHA1 algorithm
+whatever HASH comes is your commit HASH
