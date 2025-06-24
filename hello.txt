@@ -136,8 +136,57 @@ but, how?
 
 git reset <commit id(hash)>
 to whichever commit yo want to go, just type it's hash after "git reset"
+though, here we can go in forward or backward commits.
 
-to delete any specific commit
+to delete / discard any specific commit
 use:
 git reset --hard <commit id(hash)>
 just add "--hard" after "git reset" and type commit's hash to delete it.
+here, we cannot go in forward or backward commits, because it's deleted,for that we could use "git reset" command instead of using "git reset --hard"
+
+where the .git folder lies?
+- in our local machine
+
+now suppose you want to do a project with your friend and want to share the code with him/her
+how to share ?
+using google drive, pendrive
+
+suppose you both are using pendrive for sharing the files
+you copy the project folder to the pendrive
+so the .git folder will also go with the project in pendrive
+
+now your friend will get this pendrive
+he/she will copy the code files
+so there will also be .git folder
+
+if your friend types "git log" in your project folder, he/she can see all the changes/commits/history you've made because all the commits resides inside .git folder
+
+now your friend made some changes in this project folder
+he/she made a commit with all these changes and copied the project folder to the pendrive
+
+now your friend calls you and tells you  "I've made some changes inside the project folder, you can get it"
+
+now you copy the files to your computer
+now you ca also see your friend's changes inside project folder
+
+this is how git makes the collaboration possible between 2 or may peoples.
+
+but there is one problem
+- can we consider pendrive as a central storage system
+  - no
+
+consider both the persons have made the changes to the same file (e.g. hello.txt)
+now who will be considered as source of truth?
+we should have a central place which acts as a source of truth
+in addition, we should also have such device connected with internet, so both persons can work remotely.
+
+For that we use GitHub instead of pendrive.
+So, in github there will be a central repository, where both persons can independently pull or push the code without any conflict
+
+How to upload files on github using git:
+first create a repo on github then copy the "git remote add origin" command
+Ex:
+git remote add origin https://github.com/dharmikbhuva2784/Git_GitHub_Concepts.git
+git push -u origin main
+
+this will push your whole code to github repo
