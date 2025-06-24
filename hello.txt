@@ -1,4 +1,4 @@
-Linux cmds (Necessary):
+Linux cmds (Necessary before understanding Git commands):
 
 1. "cat <filename>"
 ex: cat notes.txt
@@ -17,7 +17,7 @@ ex: if you're in /home/user/Desktop
 Lists all files, including hidden files (those starting with a dot (.)).
 ex: ls -a
     will show files like:
-    .   ..    .bashrc     .gitignore        myfile.txt      .git
+    .     ..     .bashrc     .gitignore     myfile.txt     .git
 
 ___________________________________________________________________________
 
@@ -118,3 +118,27 @@ git status  --|
 how the git commit's hash (Id) is made ?
 first read all the code files in folder and HASH it using SHA1 algorithm
 whatever HASH comes is your commit HASH
+
+when we add and commit without any changes, it calculates the HASH in both cases, and both hashes will be same, so it will display "nothing to commit, working tree clean"
+
+hash makes the unique identifier of each commit
+
+we never interact with hashes
+we never make changes inside .git folder
+we always use git cli
+
+these are the prerequisites to understand how git stores and retrive different versions of code
+
+can we go up and down in commits?
+can we revert back and forward the HEAD in commits?
+- Yes
+but, how?
+
+git reset <commit id(hash)>
+
+to whichever commit yo want to go, just type it's hash after "git reset"
+
+to delete any specific commit
+use:
+git reset --hard <commit id(hash)>
+just add "--hard" after "git reset" and type commit's hash to delete it.
