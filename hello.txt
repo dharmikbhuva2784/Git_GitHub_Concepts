@@ -135,7 +135,6 @@ can we revert back and forward the HEAD in commits?
 but, how?
 
 git reset <commit id(hash)>
-
 to whichever commit yo want to go, just type it's hash after "git reset"
 
 to delete any specific commit
