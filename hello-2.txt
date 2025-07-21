@@ -1,1 +1,2 @@
 Hello from file 2
+this for understanding git diff concept
