@@ -37,3 +37,5 @@ this avoids crashing the server
 if any feature gets merged to main branch, it will go directly to production, it's a ci/cd pipeline
 
 in company, every developer can work independently like this with branches
+
+git branch <branch-name>: create a new branch
