@@ -27,6 +27,9 @@ it tracks the changes, bugs, and saves every version of code as a new file.
 
 useful to resolve bugs and mantaining history of code
 
+git was founded by linus torwards
+git had so many contributors, so it do not outdated like others
+
 How to use git?
 
 to start tracking a folder =
