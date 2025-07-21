@@ -35,6 +35,7 @@ How to use git?
 to start tracking a folder =
 use git init
 (iss folder ko track karna chalu karo)
+it initialize the git in our folder
 
 to start tracking a file inside a folder =
 use git add <filename>
