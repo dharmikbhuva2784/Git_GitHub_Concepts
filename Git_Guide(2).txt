@@ -40,3 +40,6 @@ in company, every developer can work independently like this with branches
 
 git branch <branch-name>: create a new branch
 git checkout <branch-name>: to enter into any particular branch
+
+git checkout -b <branch-name>: first it tries to go into that particular branch, if that branch does not exists, it will create a new branch with that particular name, and will enter into it after that.
+
